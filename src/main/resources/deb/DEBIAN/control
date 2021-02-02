@@ -1,0 +1,5 @@
+Package: @Bundle-SymbolicName@
+Version: @Bundle-Version@
+Architecture: @ARCH@
+Maintainer: @Bundle-Vendor@
+Description: @Bundle-Name@

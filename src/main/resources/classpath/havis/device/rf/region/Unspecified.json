@@ -1,0 +1,19 @@
+{
+  "id" : "Unspecified",
+  "regulatoryCapabilities" : {
+    "countryCode" : 0,
+    "communicationStandard" : 0,
+    "transmitPowerTable" : {
+      "entryList" : ["java.util.ArrayList", [
+      	{"index" : 0, "transmitPower" : 0} 	 /* default */
+      ]]
+    },
+    "hopping" : false,
+    "freqHopTable" : {
+      "entryList" : ["java.util.ArrayList", []]
+    },
+    "fixedFreqTable" : {
+      "freqList" : ["java.util.ArrayList", []]
+    }
+  }
+}

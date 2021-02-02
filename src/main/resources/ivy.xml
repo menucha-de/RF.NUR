@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd" xmlns:e="http://ant.apache.org/ivy/extra">
+
+	<info organisation="havis/device/rf" module="nur-${platform}" default="true" e:app="havis.device.rf-nur" />
+
+	<configurations>
+		<conf name="default" />
+		<conf name="doc" />
+		<conf name="src" />
+		<conf name="app" />
+	</configurations>
+
+	<publications>
+		<artifact name="havis.device.rf-nur" conf="default" />
+		<artifact name="havis.device.rf-nur-javadoc" conf="doc" />
+		<artifact name="havis.device.rf-nur-sources" conf="src" />
+		<artifact name="havis.device.rf-nur" type="app" conf="app" />
+	</publications>
+
+	<dependencies>
+		<dependency org="havis/device/rf" name="common" rev="${havis.version}" conf="default" />
+		<dependency org="com/nordicid" name="nativeserial" rev="${nordicid.version}" conf="default" />
+	</dependencies>
+
+</ivy-module>

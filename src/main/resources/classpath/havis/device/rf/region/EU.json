@@ -1,0 +1,52 @@
+{
+  "id" : "EU",
+  "regulatoryCapabilities" : {
+    
+    "countryCode" : 0,  
+    
+    "communicationStandard" : 2, /* 865-868 MHz IAW LLRP chap. 10.2.4 */
+     
+    "transmitPowerTable" : {
+      "entryList" : [ "java.util.ArrayList", [
+      	
+      	{"index" : 0,"transmitPower" :  8},  /*  8 dbM,  6 mW */
+      	{"index" : 1,"transmitPower" :  9}, /*  9 dbM,  8 mW */
+      	{"index" : 2,"transmitPower" : 10}, /* 10 dbM, 10 mW */
+      	{"index" : 3,"transmitPower" : 11}, /* 11 dbM, 13 mW */
+      	{"index" : 4,"transmitPower" : 12}, /* 12 dbM, 16 mW */
+      	{"index" : 5,"transmitPower" : 13}, /* 13 dbM, 20 mW */
+      	{"index" : 6,"transmitPower" : 14}, /* 14 dbM, 25 mW */
+      	{"index" : 7,"transmitPower" : 15}, /* 15 dbM, 32 mW */
+      	{"index" : 8,"transmitPower" : 16}, /* 16 dbM, 40 mW */
+      	{"index" : 9,"transmitPower" : 17}, /* 17 dbM, 50 mW */
+      	{"index" : 10, "transmitPower" : 18}, /* 18 dbM, 63 mW */
+      	{"index" : 11, "transmitPower" : 19}, /* 19 dbM, 79 mW */
+      	{"index" : 12, "transmitPower" : 20}, /* 20 dbM, 100 mW */
+      	{"index" : 13, "transmitPower" : 21}, /* 21 dbM, 126 mW */
+      	{"index" : 14, "transmitPower" : 22}, /* 22 dbM, 158 mW */
+      	{"index" : 15, "transmitPower" : 23}, /* 23 dbM, 200 mW */
+      	{"index" : 16, "transmitPower" : 24}, /* 24 dbM, 251 mW */
+      	{"index" : 17, "transmitPower" : 25}, /* 25 dbM, 316 mW */
+      	{"index" : 18, "transmitPower" : 26}, /* 26 dbM, 398 mW */
+      	{"index" : 19, "transmitPower" : 27} /* 27 dbM, 500 mW */ 
+      	
+      	 ] ]
+    },
+    
+    "hopping" : true,
+    
+	"freqHopTable" : {
+		"entryList" : [ "java.util.ArrayList", [ {
+			"index" : 1,
+			"freqList" : [ "java.util.ArrayList", [ 
+				/* BaseFreq = 865700 kHz, ChannelSpacing = 600 kHz, ChannelCount = 4 */ 
+				865700, 866300, 866900, 867500 ] ]
+		} ] ]
+	},
+    
+    "fixedFreqTable" : {
+      "freqList" : [ "java.util.ArrayList", [ ] ]
+    }
+    
+  }
+}

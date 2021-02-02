@@ -1,0 +1,55 @@
+{
+  "region": "Unspecified",
+  
+  "deviceCapabilities" : {
+    "manufacturer" : 1111, 
+    "model" : 2222, 
+    "firmware" : "1.0", 
+    "numberOfAntennas" : 2, 
+    "maxReceiveSensitivity" : 127,
+    "receiveSensitivityTable" : 
+    { "entryList" : [ "java.util.ArrayList", [ 
+    	{ "index" : 0, "receiveSensitivity" : 0 } ] ]
+    },
+    
+    "antennaReceiveSensitivityRangeTable" : 
+    { "entryList" : [ "java.util.ArrayList", [ ] ] }
+  },
+  
+  "regulatoryCapabilities" : {
+    "countryCode" : 0,
+    "communicationStandard" : 0,
+    "transmitPowerTable" : {
+      "entryList" : ["java.util.ArrayList", [
+      	{"index" : 0, "transmitPower" : 0} 	 /* default */
+      ]]
+    },
+    "hopping" : false,
+    "freqHopTable" : {
+      "entryList" : ["java.util.ArrayList", []]
+    },
+    "fixedFreqTable" : {
+      "freqList" : ["java.util.ArrayList", []]
+    }
+  },
+  
+  "antennaConfigurationList" : {
+    "entryList" : [ "java.util.ArrayList", [ 
+    { "id" : 1, "receiveSensitivity" : 0, "transmitPower" : 0, "hopTableID" : 0, "channelIndex" : 1, "connect" : "AUTO" }, 
+    { "id" : 2, "receiveSensitivity" : 0, "transmitPower" : 0, "hopTableID" : 0, "channelIndex" : 2, "connect" : "AUTO" }	 
+    ] ]
+  },
+  
+  "keepAliveConfiguration" : 
+  { "enable" : false, "interval" : 1000 },
+  
+  "inventorySettings": {
+    "tagSmoothing" : {
+      "enabled" : false,
+      "glimpsedTimeout" : 500,
+      "observedCountThreshold" : 3,
+      "observedTimeThreshold" : 500,
+      "lostTimeout" : 300
+    }
+  }
+}

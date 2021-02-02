@@ -1,0 +1,27 @@
+Bundle-Name: Ha-VIS NUR RF Device
+Bundle-SymbolicName: havis.device.rf-nur
+Bundle-Activator: havis.device.rf.nur.osgi.Activator
+Bundle-Version: 2.6.2
+Application-Name: RFID Hardware
+Implementation-Version: 2.6
+Bundle-ManifestVersion: 2
+Bundle-Vendor: HARTING IT_SD
+Havis-Bundle: /OSGI-INF/havis.device.rf-nur.properties
+Import-Package: 
+ com.nordicid.nativeserial,
+ com.nordicid.nurapi,
+ havis.device.rf,
+ havis.device.rf.capabilities,
+ havis.device.rf.common,
+ havis.device.rf.common.util,
+ havis.device.rf.configuration,
+ havis.device.rf.exception,
+ havis.device.rf.tag,
+ havis.device.rf.tag.operation,
+ havis.device.rf.tag.result,
+ org.osgi;resolution:=optional,
+ org.osgi.framework;resolution:=optional
+Export-Package: 
+ havis.device.rf.nur
+ 
+

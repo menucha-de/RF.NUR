@@ -1,0 +1,12 @@
+#!/bin/sh
+
+. /etc/profile
+
+URL="http://admin@localhost/rest/apps"
+PKG="50_NurApi.jar 50_com.nordicid.nativeserial-@PLATFORM@.jar 50_NativeSerialTransport.jar 50_@Bundle-SymbolicName@.jar"
+
+for pkg in $PKG; do
+  busybox wget $URL/$pkg/plug -q --spider
+done
+
+exit 0
