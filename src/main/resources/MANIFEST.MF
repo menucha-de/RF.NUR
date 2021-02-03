@@ -1,9 +1,9 @@
 Bundle-Name: Ha-VIS NUR RF Device
 Bundle-SymbolicName: havis.device.rf-nur
 Bundle-Activator: havis.device.rf.nur.osgi.Activator
-Bundle-Version: 2.6.2
+Bundle-Version: 2.7.0
 Application-Name: RFID Hardware
-Implementation-Version: 2.6
+Implementation-Version: 2.7
 Bundle-ManifestVersion: 2
 Bundle-Vendor: HARTING IT_SD
 Havis-Bundle: /OSGI-INF/havis.device.rf-nur.properties
